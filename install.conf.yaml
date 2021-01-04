@@ -1,0 +1,13 @@
+- shell:
+    - command: apt install -t zsh
+      description: Installing base software
+      stdin: true
+      stdout: true
+    - command: apt install -y yarn nodejs npm nvm vim
+      description: Installing codding tools
+      stdin: true
+      stdout: true
+    - command: yarn global add gitmoji-cli
+      description: Installing global tools via yarn
+      stdin: true
+      stdout: true
