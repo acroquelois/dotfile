@@ -1,13 +1,21 @@
 - shell:
-    - command: apt install -t zsh
+    - command: apt install -y zsh; apt update
       description: Installing base software
       stdin: true
       stdout: true
-    - command: apt install -y yarn nodejs npm nvm vim
+      stderr: true
+    - command: curl -sL https://deb.nodesource.com/setup_14.15 | sudo -E bash -; apt install nodejs
+      description: Installing node
+      stdin: true
+      stdout: true
+      stderr: true
+    - command: apt remove -y cmdtest; apt update; apt install --no-install-recommends yarn; apt install -y vim; apt update
       description: Installing codding tools
       stdin: true
       stdout: true
+      stderr: true
     - command: yarn global add gitmoji-cli
       description: Installing global tools via yarn
       stdin: true
       stdout: true
+      stderr: true
