@@ -7,7 +7,3 @@
       description: Installing codding tools
       stdin: true
       stdout: true
-    - command: yarn global add gitmoji-cli
-      description: Installing global tools via yarn
-      stdin: true
-      stdout: true
