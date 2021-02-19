@@ -1,9 +1,9 @@
 - shell:
-    - command: apt install -t zsh
+    - command: apt install -y zsh
       description: Installing base software
       stdin: true
       stdout: true
-    - command: apt install -y yarn nodejs npm nvm vim
+    - command: apt install -y nodejs npm
       description: Installing codding tools
       stdin: true
       stdout: true
