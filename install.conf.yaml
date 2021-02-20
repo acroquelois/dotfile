@@ -1,9 +1,9 @@
 - shell:
-    - command: apt install -y zsh
+    - command: apt install -y zsh curl
       description: Installing base software
       stdin: true
       stdout: true
-    - command: apt install -y nodejs npm
-      description: Installing codding tools
+    - command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash; source ~/.bashrc
+      description: Installation nvm
       stdin: true
       stdout: true
