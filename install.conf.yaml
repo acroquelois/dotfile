@@ -1,17 +1,25 @@
 - shell:
-    - command: apt install -y zsh curl
+    - command: apt update; apt install -y zsh curl wget
       description: Installing base software
       stdin: true
       stdout: true
-    - command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash; source ~/.bashrc
+    - command: apt update; curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash; source ~/.bashrc
       description: Installation nvm
       stdin: true
       stdout: true
-    - command: apt install -y yarn npm
+    - command: apt update; apt install -y yarn npm
       description: Installation yarn & npm
       stdin: true
       stdout: true
-    - command: apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common; curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -; sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"; apt update; apt install -y docker-ce docker-ce-cli containerd.io
+    - command: apt update; apt install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common; curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -; sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"; apt update; apt install -y docker-ce docker-ce-cli containerd.io
       description: Installation Docker
+      stdin: true
+      stdout: true
+    - command: apt update; apt install -y build-essential
+      description: Installation GCC
+      stdin: true
+      stdout: true
+    - command: apt update; curl https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb; dpkg -i packages-microsoft-prod.deb; apt install -y apt-transport-https; apt update; apt install -y dotnet-sdk-5.0; apt update; apt install -y dotnet-runtime-5.0; apt update; apt install -y dotnet-sdk-3.1; apt update; apt install -y dotnet-runtime-3.1
+      description: Installation dotnet
       stdin: true
       stdout: true
