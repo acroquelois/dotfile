@@ -1,9 +1,22 @@
 - shell:
-    - command: apt install -y zsh curl
+    - command: apt update; apt install -y zsh curl
       description: Installing base software
       stdin: true
       stdout: true
-    - command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash; source ~/.bashrc
+    - command: apt update; curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash; source ~/.bashrc
       description: Installation nvm
+      stdin: true
+      stdout: true
+    - command: apt update; apt install -y yarn npm
+      description: Installation yarn & npm
+      stdin: true
+      stdout: true
+    - command: apt update; \
+               apt install apt-transport-https ca-certificates curl gnupg-agent software-properties-common; \
+               curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -; \
+               sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"; \
+               apt update; \
+               apt install docker-ce docker-ce-cli containerd.io
+      description: Installation docker
       stdin: true
       stdout: true
