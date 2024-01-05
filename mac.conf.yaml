@@ -1,0 +1,7 @@
+- brew:
+    - git
+    - zsh
+    - curl
+    - wget
+    - nvm
+    - docker
