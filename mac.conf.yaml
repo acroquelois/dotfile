@@ -1,4 +1,5 @@
 - brew:
+    - vim
     - git
     - zsh
     - curl
