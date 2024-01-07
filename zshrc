@@ -1,5 +1,5 @@
 # antigen 
-source ~/dotfiles/antigen.zsh
+source ~/.antigen.zsh
 
 # aliases
 alias ls="lsd"
