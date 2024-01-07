@@ -3,13 +3,16 @@
       description: Installing Zsh
       stdin: true
       stdout: true
-    - [zsh, Run zsh]
-    - command: source ~/.zshrc
+    - command: zsh; source ~/.zshrc
       description: Source Zsh
       stdin: true
       stdout: true
     - command: sudo apt install -y curl wget git vim bat
-      description: Installation Base Software
+      description: Installation Base Software via apt
+      stdin: true
+      stdout: true
+    - command: sudo snap install lsd
+      description: Installation Base Software via snap
       stdin: true
       stdout: true
 #    - command: sudo apt install -y sudo apt-transport-https ca-certificates gnupg-agent software-properties-common; curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -; add-sudo apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"; sudo apt update; sudo apt install -y docker-ce docker-ce-cli containerd.io
