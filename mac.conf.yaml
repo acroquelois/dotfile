@@ -9,3 +9,9 @@
     - bat
     - lsd
     - fzf
+
+- shell:
+    - command: zsh; source ~/.zshrc
+      description: Source Zsh
+      stdin: true
+      stdout: true
