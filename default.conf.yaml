@@ -17,7 +17,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - command: sudo /bin/bash fonts/install/sh
+    - command: sudo /bin/bash fonts/install.sh
       description: Install Fonts
       stdin: true
       stdout: true
