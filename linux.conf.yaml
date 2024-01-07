@@ -1,13 +1,17 @@
 - shell:
-    - command: apt update; apt install -y zsh curl wget git vim
+    - command: sudo apt update; sudo apt install -y zsh; source ~/.zshrc || true
       description: Installing Base Software
       stdin: true
       stdout: true
-    - command: apt update; apt install -y apt-transport-https ca-certificates gnupg-agent software-properties-common; curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -; sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"; apt update; apt install -y docker-ce docker-ce-cli containerd.io
+    - command: sudo apt update; sudo apt install curl wget git vim
       description: Installation Docker
       stdin: true
       stdout: true
-    - command: apt update; apt install -y build-essential
+    - command: sudo apt update; sudo apt install -y sudo apt-transport-https ca-certificates gnupg-agent software-properties-common; curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -; add-sudo apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"; sudo apt update; sudo apt install -y docker-ce docker-ce-cli containerd.io
+      description: Installation Docker
+      stdin: true
+      stdout: true
+    - command: sudo apt update; sudo apt install -y build-essential
       description: Installation GCC
       stdin: true
       stdout: true
