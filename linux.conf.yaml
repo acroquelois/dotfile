@@ -1,5 +1,5 @@
 - shell:
-    - command: sudo apt update; sudo apt install -y zsh zsh-antigen; curl -L git.io/antigen > ~/.antigen.zsh;
+    - command: sudo apt update; sudo apt install -y zsh;
       description: Installing Zsh
       stdin: true
       stdout: true
@@ -8,15 +8,15 @@
       description: Source Zsh
       stdin: true
       stdout: true
-    - command: sudo apt update; sudo apt install -y curl wget git vim bat
+    - command: sudo apt install -y curl wget git vim bat
       description: Installation Base Software
       stdin: true
       stdout: true
-#    - command: sudo apt update; sudo apt install -y sudo apt-transport-https ca-certificates gnupg-agent software-properties-common; curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -; add-sudo apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"; sudo apt update; sudo apt install -y docker-ce docker-ce-cli containerd.io
+#    - command: sudo apt install -y sudo apt-transport-https ca-certificates gnupg-agent software-properties-common; curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -; add-sudo apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"; sudo apt update; sudo apt install -y docker-ce docker-ce-cli containerd.io
 #      description: Installation Docker
 #      stdin: true
 #      stdout: true
-#    - command: sudo apt update; sudo apt install -y build-essential
+#    - command: sudo apt install -y build-essential
 #      description: Installation GCC
 #      stdin: true
 #      stdout: true
