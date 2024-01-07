@@ -14,7 +14,7 @@
       - ~/pro
       - ~/tmp
       - ~/data
-      -
+
 - link:
     ~/.zshrc: zshrc
 
