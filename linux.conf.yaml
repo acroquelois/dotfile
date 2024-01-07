@@ -3,7 +3,7 @@
       description: Installing Zsh
       stdin: true
       stdout: true
-    - command: sudo apt install -y curl wget git vim bat
+    - command: sudo apt install -y curl wget git vim bat fzf
       description: Installation Base Software via apt
       stdin: true
       stdout: true
