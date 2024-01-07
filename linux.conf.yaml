@@ -3,10 +3,6 @@
       description: Installing Zsh
       stdin: true
       stdout: true
-    - command: zsh; source ~/.zshrc
-      description: Source Zsh
-      stdin: true
-      stdout: true
     - command: sudo apt install -y curl wget git vim bat
       description: Installation Base Software via apt
       stdin: true
@@ -23,3 +19,7 @@
 #      description: Installation GCC
 #      stdin: true
 #      stdout: true
+    - command: zsh; source ~/.zshrc
+      description: Source Zsh
+      stdin: true
+      stdout: true
