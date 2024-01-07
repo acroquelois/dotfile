@@ -4,9 +4,6 @@
       force: true
 
 - clean: ['~']
-- clean:
-    ~/:
-      force: true
 
 - create:
       - ~/downloads
