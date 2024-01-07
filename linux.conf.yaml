@@ -3,7 +3,7 @@
       description: Installing Zsh
       stdin: true
       stdout: true
-    - [sudo chsh -s $(which zsh), Making zsh the default shell]
+    - [zsh, Run zsh]
     - command: source ~/.zshrc
       description: Source Zsh
       stdin: true
