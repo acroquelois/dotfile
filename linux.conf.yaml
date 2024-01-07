@@ -1,6 +1,10 @@
 - shell:
-    - command: sudo apt update; sudo apt install -y zsh zsh-antigen; source ~/.zshrc || true
+    - command: sudo apt update; sudo apt install -y zsh zsh-antigen;
       description: Installing Zsh
+      stdin: true
+      stdout: true
+    - command: source ~/.zshrc
+      description: Source Zsh
       stdin: true
       stdout: true
 #    - command: sudo apt update; sudo apt install -y curl wget git vim
