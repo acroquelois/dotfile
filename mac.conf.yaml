@@ -6,3 +6,5 @@
     - wget
     - nvm
     - docker
+    - bat
+    - lsd
