@@ -13,8 +13,9 @@
       - ~/data
 
 - link:
-    ~/.zshrc: zsh/zshrc
-    ~/.tmux.conf: tmux/tmux.conf
+    ~/.zshrc: config/zsh/zshrc
+    ~/.tmux.conf: config/tmux/tmux.conf
+    ~/.gitconfig: config/git/gitconfig
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
