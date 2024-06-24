@@ -8,6 +8,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle docker
 antigen bundle yarn
 antigen bundle tmux
+antigen bundle thewtex/tmux-mem-cpu-load
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle babarot/enhancd
 
