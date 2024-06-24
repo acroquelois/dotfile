@@ -17,7 +17,5 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - command: /bin/bash fonts/install.sh
-      description: Install Fonts
-      stdin: true
-      stdout: true
+    - [/bin/bash fonts/install.sh]
+    - [chsh -s /bin/zsh acroquelois]

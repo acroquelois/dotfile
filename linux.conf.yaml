@@ -3,7 +3,7 @@
       description: Install Zsh
       stdin: true
       stdout: true
-    - command: sudo apt install -y curl wget git vim bat fzf
+    - command: sudo apt install -y curl wget git vim bat fzf tmux
       description: Install Base Software via apt
       stdin: true
       stdout: true
