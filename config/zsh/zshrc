@@ -1,5 +1,5 @@
 # antigen 
-source ~/dotfile/zsh/antigen.zsh
+source ~/dotfile/config/zsh/antigen.zsh
 
 # packages
 antigen use oh-my-zsh
