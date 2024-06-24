@@ -9,6 +9,7 @@
     - bat
     - lsd
     - fzf
+    - tmux
 
 - shell:
     - command: zsh; source ~/.zshrc
