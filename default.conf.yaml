@@ -20,4 +20,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [/bin/bash fonts/install.sh]
-    - [chsh -s /bin/zsh acroquelois]
+    - [chsh -s /bin/zsh]
