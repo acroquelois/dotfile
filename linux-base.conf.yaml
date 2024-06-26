@@ -1,0 +1,9 @@
+- shell:
+    - command: sudo apt update
+      description: Update apt
+      stdin: true
+      stdout: true
+    - command: sudo apt install -y curl wget git vim bat fzf zsh lsd tmux build-essential
+      description: Install Base Software via apt
+      stdin: true
+      stdout: true

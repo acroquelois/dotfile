@@ -18,6 +18,8 @@
     ~/.gitconfig: config/git/gitconfig
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
-    - [/bin/bash fonts/install.sh]
-    - [chsh -s /bin/zsh]
+    - command: git submodule update --init --recursive
+      description: Installing submodules
+    - command: /bin/bash fonts/install.sh
+      description: Install Fonts
+    # - [chsh -s /bin/zsh]
