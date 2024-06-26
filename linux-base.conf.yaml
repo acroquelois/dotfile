@@ -7,3 +7,8 @@
       description: Install Base Software via apt
       stdin: true
       stdout: true
+    - command: ssh-keygen -t rsa -b 4096
+      description: Generating ssh key
+      stdin: true
+      stdout: true
+      stderr: true
