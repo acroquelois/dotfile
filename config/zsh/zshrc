@@ -5,7 +5,7 @@ source ~/dotfile/config/zsh/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle docker
+# antigen bundle docker
 antigen bundle yarn
 antigen bundle tmux
 antigen bundle thewtex/tmux-mem-cpu-load
@@ -25,3 +25,8 @@ alias ls=lsd
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#6c6c6c,bold'
 ENHANCD_FILTER="fzf --height 40%:fzy"
 ZSH_TMUX_AUTOSTART=true
+
+# This loads nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"

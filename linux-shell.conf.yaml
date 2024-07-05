@@ -12,3 +12,8 @@
       stdin: true
       stdout: true
       stderr: true
+    - command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+      description: Install nvm
+      stdin: true
+      stdout: true
+      stderr: true
